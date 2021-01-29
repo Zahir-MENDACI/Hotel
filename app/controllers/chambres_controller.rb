@@ -52,7 +52,7 @@ class ChambresController < ApplicationController
 	def destroy
 		authorize @chambre
 	  	@chambre.destroy
-	  	redirect_to chambres_path
+	  	redirect_to "/chambres"
 	end
   
 	private
